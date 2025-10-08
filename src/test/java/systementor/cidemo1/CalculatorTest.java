@@ -19,6 +19,17 @@ class CalculatorTest {
         calculator = new Calculator();
     }
 
+
+
+    @Test
+    void githubDemo() {
+        int result = calculator.add(a,b);
+        assertEquals(3,result);
+
+    }
+
+
+
     @Test
     void add() {
         int result = calculator.add(a,b);
