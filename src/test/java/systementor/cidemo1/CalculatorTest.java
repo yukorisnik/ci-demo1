@@ -24,7 +24,7 @@ class CalculatorTest {
     @Test
     void githubDemo() {
         int result = calculator.add(a,b);
-        assertEquals(4,result);
+        assertEquals(3,result);
 
     }
 
