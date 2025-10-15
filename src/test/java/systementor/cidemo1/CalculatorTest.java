@@ -18,6 +18,10 @@ class CalculatorTest {
 
 
 
+    private final int devideA = 4;
+    private final int devideB = 2;
+
+
     @BeforeEach
     void setUp() {
         calculator = new Calculator();
@@ -39,15 +43,15 @@ class CalculatorTest {
     @Test
     void divideWithLogging() {
 
-        logger.info("divide " + a + " with " + b);
+        logger.info("divide " + devideA + " with " + devideB);
 
         if (b == 0){
             logger.severe("divide by zero!!");
             throw new IllegalArgumentException("divide by zero");
         }
 
-        int result = a / b;
-        assertEquals(3,result);
+        int result = devideA / devideB;
+        assertEquals(2,result);
 
     }
 
