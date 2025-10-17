@@ -48,7 +48,7 @@ public class SystementorSeleniumTest {
         String currentUrl = driver.getCurrentUrl();
         String title = driver.getTitle();
 
-        assertTrue(currentUrl.contains("Om osss") || title.contains("Om osss"));
+        assertTrue(currentUrl.contains("Om oss") || title.contains("Om oss"));
         logger.info("After click it lands on the Om oss page");
 
 

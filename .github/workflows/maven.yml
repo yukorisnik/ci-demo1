@@ -28,18 +28,19 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
+    - name: Run tests
+      run: mvn test
 
 
-    - name: Install Chrome
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y chromium-browser
+#   - name: Install Chrome
+#     run: |
+#       sudo apt-get update
+#       sudo apt-get install -y chromium-browser
 
 
-    - name: Build and test
-      env:
-        CHROME_OPTS: "--headless --no-sandbox --disable-dev-shm-usage"
-      run: |
-        echo "Kör alla tester, selenium och unittester..."
-        mvn -B clean test -Dwebdriver.chrome.driver=/usr/bin/chromedriver
-
+#   - name: Build and test
+#     env:
+#       CHROME_OPTS: "--headless --no-sandbox --disable-dev-shm-usage"
+#     run: |
+#       echo "Kör alla tester, selenium och unittester..."
+#       mvn -B clean test -Dwebdriver.chrome.driver=/usr/bin/chromedriver

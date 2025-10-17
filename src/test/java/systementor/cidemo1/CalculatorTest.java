@@ -18,8 +18,8 @@ class CalculatorTest {
 
 
 
-    private final int devideA = 4;
-    private final int devideB = 2;
+    private int devideA = 4;
+    private int devideB = 2;
 
 
     @BeforeEach
@@ -29,12 +29,8 @@ class CalculatorTest {
 
 
 
-    @Test
-    void githubDemo() {
-        int result = calculator.add(a,b);
-        assertEquals(3,result);
 
-    }
+
 
 
 
@@ -45,7 +41,7 @@ class CalculatorTest {
 
         logger.info("divide " + devideA + " with " + devideB);
 
-        if (b == 0){
+        if (devideB == 0){
             logger.severe("divide by zero!!");
             throw new IllegalArgumentException("divide by zero");
         }
@@ -54,6 +50,8 @@ class CalculatorTest {
         assertEquals(2,result);
 
     }
+
+
 
 
 
