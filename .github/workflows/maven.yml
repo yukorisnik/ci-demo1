@@ -10,10 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-
-
       - uses: actions/checkout@v4
 
 
@@ -29,12 +26,12 @@ jobs:
         uses: actions/cache@v3             # Cacha filer mellan körningar
         with:
           path: |                          # Vilka mappar som ska sparas
-            ~/.cache/chromium              # Chrome-cache (förinstallerad webbläsare)
-            ~/.cache/selenium              # Selenium-cache (för webdriver mm)
+            ~/.cache/chromium             
+            ~/.cache/selenium
           key: ${{ runner.os }}-chrome-${{ hashFiles('**/pom.xml') }}
           # Unikt cache-key baserat på OS + pom.xml-hash
           restore-keys: |
-            ${{ runner.os }}-chrome-       # Om exakta keyn inte finns, använd generell
+            ${{ runner.os }}-chrome-      
       
 
       - name: Ensure Chrome & Chromedriver
