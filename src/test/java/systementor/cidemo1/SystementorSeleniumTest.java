@@ -16,7 +16,7 @@ public class SystementorSeleniumTest {
     Logger logger = Logger.getLogger(SystementorSeleniumTest.class.getName());
 
 
-/*
+
 
 
     @Test
@@ -37,7 +37,7 @@ public class SystementorSeleniumTest {
         driver.get("https://systementor.se/");
         logger.info("Navigated to Systementor");
 
-        WebElement omOssKlick = driver.findElement(By.cssSelector("a[href*=om-oss]"));
+        WebElement omOssKlick = driver.findElement(By.linkText("Om oss"));
 
         // Klicka
         omOssKlick.click();
@@ -60,8 +60,6 @@ public class SystementorSeleniumTest {
 
     }
 
-
- */
 
 
 }
