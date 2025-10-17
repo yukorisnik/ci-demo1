@@ -18,8 +18,8 @@ class CalculatorTest {
 
 
 
-    private int devideA = 4;
-    private int devideB = 2;
+    private final int devideA = 4;
+    private final int devideB = 2;
 
 
     @BeforeEach
@@ -30,18 +30,12 @@ class CalculatorTest {
 
 
 
-
-
-
-
-
-
     @Test
     void divideWithLogging() {
 
         logger.info("divide " + devideA + " with " + devideB);
 
-        if (devideB == 0){
+        if (b == 0){
             logger.severe("divide by zero!!");
             throw new IllegalArgumentException("divide by zero");
         }
@@ -54,32 +48,36 @@ class CalculatorTest {
 
 
 
-
-
     @Test
-    void add() {
+    void addShouldReturn3() {
         int result = calculator.add(a,b);
         assertEquals(3,result);
 
     }
 
     @Test
-    void subtract() {
+    void subtractShouldReturnNegative1() {
         int result = calculator.subtract(a,b);
         assertEquals(-1,result);
     }
 
     @Test
-    void multiply() {
+    void multiplyShouldReturn2() {
         int result = calculator.multiply(a,b);
         assertEquals(2,result);
     }
 
 
     @Test
-    void divide() {
+    void divideShouldReturn0() {
         int result = calculator.divide(a,b);
         assertEquals(0,result);
+    }
+
+
+    @Test
+    void divideByZeroThrowsError(){
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(5,0));
     }
 
 

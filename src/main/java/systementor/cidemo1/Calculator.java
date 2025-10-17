@@ -16,8 +16,8 @@ public class Calculator {
     }
 
     public int divide (int a, int b) {
-        if(b == 0){
-            throw new ArithmeticException("Divide by zero");
+        if (b == 0){
+            throw new IllegalArgumentException("Divide by zero");
         }
         return a / b;
     }
