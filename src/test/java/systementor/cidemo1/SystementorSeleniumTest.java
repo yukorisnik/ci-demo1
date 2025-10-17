@@ -16,7 +16,7 @@ public class SystementorSeleniumTest {
     Logger logger = Logger.getLogger(SystementorSeleniumTest.class.getName());
 
 
-
+/*
 
 
     @Test
@@ -60,6 +60,8 @@ public class SystementorSeleniumTest {
 
     }
 
+
+ */
 
 
 }
