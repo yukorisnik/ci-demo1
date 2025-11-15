@@ -16,7 +16,7 @@ class CalculatorTest {
     private final int a = 1;
     private final int b = 2;
 
-    private final int devideA = 14;
+    private final int devideA = 6;
     private final int devideB = 2;
 
 
@@ -37,7 +37,7 @@ class CalculatorTest {
         }
 
         int result = devideA / devideB;
-        assertEquals(7,result);
+        assertEquals(3,result);
 
     }
 
@@ -45,7 +45,7 @@ class CalculatorTest {
     @Test
     void addShouldReturn3() {
         int result = calculator.add(a,b);
-        assertEquals(3,result);
+        assertEquals(1,result);
 
     }
 
