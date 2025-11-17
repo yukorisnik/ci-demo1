@@ -24,7 +24,6 @@ class CalculatorTest {
         calculator = new Calculator();
     }
 
-
     @Test
     void divideWithLogging() {
 
@@ -39,7 +38,6 @@ class CalculatorTest {
         assertEquals(4,result);
 
     }
-
 
     @Test
     void addShouldReturn3() {
