@@ -22,5 +22,5 @@ public class Calculator {
         return a / b;
     }
 
-// kommentar för test i ci
+// kommentar för test i ci xx
 }
