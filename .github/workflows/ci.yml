@@ -2,7 +2,7 @@ name: Java with Maven >> Master
 
 on:
   push:
-    branches:  ["ci-demo_noTest_yml"]
+    branches:  ["master"]
   pull_request:
     branches: ["master"]
 
