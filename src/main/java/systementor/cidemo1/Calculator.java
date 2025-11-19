@@ -21,6 +21,5 @@ public class Calculator {
         }
         return a / b;
     }
-// avslut test 19.nov
 
 }
