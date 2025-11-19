@@ -1,5 +1,5 @@
 
-name: Java CI with Maven from github >> dev branch
+name: Java CI with Maven >> dev Test calculator
 
 on:
   push:

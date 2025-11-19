@@ -1,4 +1,4 @@
-name: Java with Maven
+name: Java with Maven - print world
 
 on:
   push:
