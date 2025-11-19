@@ -1,0 +1,16 @@
+name: Java with Maven
+
+on:
+  push:
+    branches:  ["ci-demo_noTest_yml"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Run print
+        run: echo "Hello my new world"
