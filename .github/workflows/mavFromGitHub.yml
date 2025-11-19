@@ -1,4 +1,4 @@
-name: Java with Maven >> Master
+name: Java with Maven >> print on Master repo
 
 on:
   push:
