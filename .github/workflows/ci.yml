@@ -1,4 +1,4 @@
-name: Java with Maven VS-code
+name: Java with Maven >> Master
 
 on:
   push:
