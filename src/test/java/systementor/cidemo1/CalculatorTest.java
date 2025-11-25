@@ -34,7 +34,8 @@ class CalculatorTest {
             throw new IllegalArgumentException("divide by zero");
         }
 
-        int result = devideA / devideB;
+        int result = calculator.divide(devideA,devideB); 
+                //devideA / devideB;
         assertEquals(4,result);
 
     }
